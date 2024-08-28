@@ -1,0 +1,169 @@
+/* General reset for body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Container for centering the todo app */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* or your desired background color */
+}
+
+
+/* Styling for the todo app container */
+.todoApp {
+    width: 70%;
+    max-width: 900px;
+    background-color: white;
+    border: 1px solid rgb(66, 65, 65);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Optional: add padding to create space around the content */
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Automatically adjust height based on content */
+}
+
+
+/* Header styling */
+.todoHeader {
+  background-color: #00796b; /* Darker teal color */
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px; /* Adjusted padding */
+  color: white;
+  border-bottom: 1px solid #e0e0e0; /* Light border between header and body */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Body styling */
+.todoBody {
+  padding: 20px;
+  flex: 1; /* Take up remaining space */
+  overflow-y: auto; /* Scroll if content overflows */
+  background-color: #fafafa; /* Slightly off-white background */
+}
+
+/* Styling for the create todo section */
+.createTodo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space below the input and button */
+}
+
+/* Styling for input field and button */
+.createTodo input {
+  width: 70%;
+  padding: 12px; /* Increased padding */
+  border-radius: 6px; /* Slightly rounded corners */
+  border: 1px solid #c1c1c1; /* Light grey border */
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+.createTodo button {
+  width: 25%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none; /* Remove default border */
+  background-color: #00796b; /* Match header color */
+  color: white;
+  font-size: 16px; /* Match font size with input */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for createTodo buttons */
+.createTodo button:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Active effect for createTodo buttons */
+.createTodo button:active {
+  background-color: #00251a; /* Even darker teal on active */
+}
+
+/* Styling for the todo list */
+.todoList {
+  margin-top: 20px; /* Reduced margin for better spacing */
+}
+
+/* Styling for individual todo items */
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px; /* Adjusted padding */
+  border-bottom: 1px solid #e0e0e0; /* Light border between items */
+  background-color: #ffffff; /* White background for items */
+  border-radius: 8px; /* Rounded corners for items */
+  margin-bottom: 10px; /* Space between items */
+}
+
+/* Alternating row colors */
+.todoItem:nth-child(odd) {
+  background-color: #f9f9f9; /* Very light grey for alternating rows */
+}
+
+/* Checkbox styling */
+.todoCheckbox {
+  margin-right: 15px; /* Space between checkbox and text */
+  flex-shrink: 0; /* Prevent checkbox from shrinking */
+}
+
+/* Todo name styling */
+.todoName {
+  flex: 1; /* Take up remaining space */
+  font-size: 16px; /* Font size for better readability */
+}
+
+/* Actions section styling */
+.actions {
+  display: flex;
+  justify-content: flex-end; /* Align actions to the end */
+  gap: 10px; /* Space between action buttons */
+}
+
+/* Consistent input and button styling */
+input,
+button {
+  border-radius: 6px; /* Match border-radius with other elements */
+}
+
+/* General button styling for actions */
+button {
+  background-color: #00796b; /* Default background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  margin-right: 10px; /* Space between buttons */
+}
+
+/* Edit button specific styling */
+.btnEdit {
+  background-color: #4caf50; /* Green color for edit */
+}
+
+.btnEdit:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Delete button specific styling */
+.btnDelete {
+  background-color: #f44336; /* Red color for delete */
+}
+
+.btnDelete:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
